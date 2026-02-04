@@ -360,6 +360,16 @@
       ]
     },
     {
+      "id": "research-qmd-001",
+      "title": "Research QMD (Query Memory Database)",
+      "description": "Undersøk QMD-teknologi for bedre AI memory-håndtering. Vurder om det kan forbedre Nikoline's memory-system (erstatte/supplere MEMORY.md og memory_search). Sammenlign med nåværende fil-baserte system.",
+      "column": "todo",
+      "assignee": "nikoline",
+      "priority": "medium",
+      "tags": ["research", "memory", "database", "optimization"],
+      "created_at": "2026-02-04T20:31:48Z"
+    },
+    {
       "id": "idea-1",
       "title": "Phase 2: Webhook Integration",
       "description": "Add webhooks for automatic task pickup so Nikoline can receive tasks directly from Kanban",
