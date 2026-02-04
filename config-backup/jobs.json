@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "210cc9a5-886f-45aa-b98e-527cece7487b",
+      "agentId": "main",
+      "name": "Ask Glenn questions",
+      "enabled": false,
+      "createdAtMs": 1769974750786,
+      "updatedAtMs": 1769974750790,
+      "schedule": {
+        "kind": "at",
+        "atMs": 1738518000000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder: Glenn invited you to ask him more questions to get to know him better. Next time you chat, ask something meaningful — about his kids' names, his grandmother Nikoline, the Bitcoin conference, his journey to sobriety, or what financial freedom really looks like to him."
+      },
+      "state": {
+        "lastRunAtMs": 1769974750790,
+        "lastStatus": "ok",
+        "lastDurationMs": 1
+      }
+    },
+    {
+      "id": "a51a3be1-12c3-4339-bd9d-9f0c26f01d39",
+      "agentId": "main",
+      "name": "Conference deep-dive with Glenn",
+      "enabled": false,
+      "createdAtMs": 1769975353511,
+      "updatedAtMs": 1769975353519,
+      "schedule": {
+        "kind": "at",
+        "atMs": 1738504800000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder: Follow up with Glenn about the Bitcoin Beyond 66 conference. Ask about current status (venue, speakers, tickets), what's overwhelming him, and what success looks like. He mentioned sharing Google Drive files — ask about that too."
+      },
+      "state": {
+        "lastRunAtMs": 1769975353519,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    },
+    {
+      "id": "d4432de3-659c-4c74-91ab-7b6401837e8b",
+      "agentId": "main",
+      "name": "Gmail Workspace Reminder",
+      "enabled": false,
+      "createdAtMs": 1769989796496,
+      "updatedAtMs": 1769989796497,
+      "schedule": {
+        "kind": "at",
+        "atMs": 1738494000000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🔔 Reminder: Set up Gmail/Google Workspace integration today! This will give me access to your emails and calendar. It's on the Kanban as a task assigned to you."
+      },
+      "state": {
+        "lastRunAtMs": 1769989796497,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    },
+    {
+      "id": "a4c7cfa2-ad23-41c8-9d5a-282b38f7bbd5",
+      "agentId": "main",
+      "name": "Webhook-vurdering reminder",
+      "enabled": false,
+      "createdAtMs": 1770066090343,
+      "updatedAtMs": 1770066090344,
+      "schedule": {
+        "kind": "at",
+        "atMs": 1740268800000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🔔 Reminder: Vurder webhook-løsningen for Kanban. Nå bruker vi polling (sjekker hvert 15. minutt). Vil du oppgradere til Cloudflare Tunnel for sanntids-oppdateringer?"
+      },
+      "state": {
+        "lastRunAtMs": 1770066090344,
+        "lastStatus": "ok",
+        "lastDurationMs": 0
+      }
+    }
+  ]
+}
