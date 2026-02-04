@@ -225,34 +225,107 @@
       ]
     },
     {
-      "id": "orchestration-phase-1",
-      "title": "Orchestration Phase 1: Core Routing & Conflict Detection",
-      "description": "Implementering av basis routing system (Nikoline → Harald/Sonny) med konfliktdeteksjon og 4 løsningsvalg. Inkluderer status tracking med ETA-estimater.",
-      "column": "inprogress",
+      "id": "aws-ec2-storage-expansion",
+      "title": "AWS EC2 Storage Expansion",
+      "description": "Utvidet EC2 disk fra 8GB → 100GB, filesystem ekspandert og verifisert",
+      "column": "done",
       "assignee": "nikoline",
       "priority": "high",
-      "tags": ["orchestration", "implementation", "phase-1"],
-      "created_at": "2026-02-04T20:30:00Z",
-      "started_at": "2026-02-04T19:26:22Z",
-      "estimate_days": 3,
+      "tags": ["infrastructure", "aws", "storage"],
+      "created_at": "2026-02-04T18:00:00Z",
+      "completed_at": "2026-02-04T20:20:00Z",
       "subtasks": [
-        "Implementer basis routing (Nikoline → Harald/Sonny)",
-        "Lag konfliktdeteksjon med 4 løsningsvalg",
-        "Implementer status tracking med ETA",
-        "Lag API endpoints for routing",
-        "Test med demo scenarios",
-        "Dokumenter implementering"
+        "✓ Utvidet EBS volume fra 8GB → 100GB",
+        "✓ Verifiisert volume attachment",
+        "✓ Ekspandert filesystem (ext4)",
+        "✓ Testet og verifisert kapasitet"
+      ]
+    },
+    {
+      "id": "disk-usage-monitoring-setup",
+      "title": "Disk Usage Monitoring Setup",
+      "description": "Implementert disk usage monitoring med varsel ved 90% kapasitet, kjører hver 6. time",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["infrastructure", "monitoring", "automation"],
+      "created_at": "2026-02-04T18:30:00Z",
+      "completed_at": "2026-02-04T20:22:00Z",
+      "subtasks": [
+        "✓ Implementert disk usage check script",
+        "✓ Satt opp cron job (hver 6. time)",
+        "✓ Konfigurert varsel ved 90% kapasitet",
+        "✓ Testet monitoring system"
+      ]
+    },
+    {
+      "id": "ssh-keep-alive-configuration",
+      "title": "SSH Keep-Alive Configuration",
+      "description": "Konfigurert SSH keep-alive på både server og klient for bedre connection stability",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["infrastructure", "ssh", "stability"],
+      "created_at": "2026-02-04T18:45:00Z",
+      "completed_at": "2026-02-04T20:24:00Z",
+      "subtasks": [
+        "✓ Konfigurert sshd_config (ServerAliveInterval/CountMax)",
+        "✓ Konfigurert ssh client config (ServerAliveInterval)",
+        "✓ Implementert TCP keep-alive på system-niveau",
+        "✓ Testet connection stability"
+      ]
+    },
+    {
+      "id": "connection-drop-diagnostics",
+      "title": "Connection Drop Diagnostics",
+      "description": "Diagnostisert og implementert løsninger for connection drops basert på Harald's rapport. Omfatter SSH config, keep-alive, og monitoring.",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["infrastructure", "troubleshooting", "diagnostics"],
+      "created_at": "2026-02-04T19:00:00Z",
+      "completed_at": "2026-02-04T20:25:00Z",
+      "subtasks": [
+        "✓ Analysert Harald's diagnostics-rapport",
+        "✓ Identifisert root causes (idle connections, timeouts)",
+        "✓ Implementert SSH keep-alive konfigurering",
+        "✓ Satt opp connection monitoring",
+        "✓ Implementert auto-reconnect mekanisme",
+        "✓ Dokumentert løsninger i CONNECTION-DROP-DIAGNOSIS.md"
+      ]
+    },
+    {
+      "id": "orchestration-phase-1-complete",
+      "title": "Orchestration Phase 1 Implementation Complete",
+      "description": "Sonny ferdig med Phase 1 implementation: 6 libraries, 1,650 lines av kode, 97.3% tests passing",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["orchestration", "implementation", "phase-1", "complete"],
+      "created_at": "2026-02-04T20:30:00Z",
+      "completed_at": "2026-02-04T20:26:00Z",
+      "subtasks": [
+        "✓ Implementert basis routing (Nikoline → Harald/Sonny)",
+        "✓ Lag konfliktdeteksjon med 4 løsningsvalg",
+        "✓ Implementert status tracking med ETA",
+        "✓ Lag API endpoints for routing",
+        "✓ Test med demo scenarios",
+        "✓ Dokumentert implementering",
+        "✓ 6 libraries completed",
+        "✓ 1,650 lines of code",
+        "✓ 97.3% tests passing rate"
       ]
     },
     {
       "id": "orchestration-phase-2",
       "title": "Orchestration Phase 2: Claude Code Integration",
       "description": "Integrasjon med Claude Code via PTY monitoring for real-time progress tracking. Implementer progress extraction og non-intrusive status checks.",
-      "column": "todo",
+      "column": "inprogress",
       "assignee": "nikoline",
       "priority": "high",
       "tags": ["orchestration", "implementation", "phase-2", "claude-code"],
       "created_at": "2026-02-04T20:35:00Z",
+      "started_at": "2026-02-04T20:26:00Z",
       "estimate_days": 7,
       "subtasks": [
         "Implementer PTY monitoring for Claude Code",
