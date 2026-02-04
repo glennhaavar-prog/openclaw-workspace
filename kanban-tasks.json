@@ -378,6 +378,61 @@
       "priority": "medium",
       "tags": ["automation", "integration"],
       "created_at": "2026-02-02T06:00:00Z"
+    },
+    {
+      "id": "kontali-frontend-setup-001",
+      "title": "Kontali: Frontend Setup (Review Queue UI)",
+      "description": "Setup Next.js project with Review Queue UI components. Include dependency installation, place 12 core files, and test with mock data.",
+      "column": "inprogress",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["kontali", "frontend", "react", "ui"],
+      "created_at": "2026-02-04T21:06:13Z",
+      "started_at": "2026-02-04T21:06:13Z",
+      "estimate_hours": 2.5,
+      "subtasks": [
+        "Setup Next.js",
+        "Install dependencies",
+        "Place 12 core files",
+        "Test with mock data"
+      ]
+    },
+    {
+      "id": "kontali-database-migrations-001",
+      "title": "Kontali: Database Migrations (Agent Tables)",
+      "description": "Implement database migrations for agent-related tables. Gap analysis of existing schema, create missing tables (agent_events, patterns, etc.), run Alembic migrations, and verify constraints.",
+      "column": "inprogress",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["kontali", "database", "migrations", "critical"],
+      "created_at": "2026-02-04T21:06:13Z",
+      "started_at": "2026-02-04T21:06:13Z",
+      "estimate_hours": 4,
+      "subtasks": [
+        "Gap analysis of existing schema",
+        "Create missing tables (agent_events, patterns, etc.)",
+        "Alembic migrations",
+        "Verify constraints"
+      ]
+    },
+    {
+      "id": "kontali-multi-agent-system-001",
+      "title": "Kontali: Multi-Agent System (Orkestrator + Specialists)",
+      "description": "Implement complete multi-agent orchestration system with specialist agents for Faktura and Bokførings. Include event loop, learning mechanism, and comprehensive testing.",
+      "column": "inprogress",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["kontali", "agents", "ai", "core"],
+      "created_at": "2026-02-04T21:06:13Z",
+      "started_at": "2026-02-04T21:06:13Z",
+      "estimate_hours": 14,
+      "subtasks": [
+        "Orkestrator event loop",
+        "Faktura-agent implementation",
+        "Bokførings-agent implementation",
+        "Learning mechanism",
+        "Testing and validation"
+      ]
     }
   ]
 }
