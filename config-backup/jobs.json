@@ -92,6 +92,24 @@
         "lastStatus": "ok",
         "lastDurationMs": 0
       }
+    },
+    {
+      "id": "c9e8522d-6c7b-4f08-9e6e-837d81947714",
+      "agentId": "main",
+      "name": "GitHub Backup Every 12 Hours",
+      "enabled": true,
+      "createdAtMs": 1770227297994,
+      "updatedAtMs": 1770227297994,
+      "schedule": {
+        "kind": "interval",
+        "intervalMs": 43200000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "direct",
+      "payload": {
+        "kind": "exec",
+        "command": "/home/ubuntu/.openclaw/workspace/scripts/backup-to-github.sh"
+      }
     }
   ]
 }
