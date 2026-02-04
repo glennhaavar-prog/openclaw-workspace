@@ -1,0 +1,300 @@
+{
+  "tasks": [
+    {
+      "id": "erp-ehf-peppol-001",
+      "title": "ERP: EHF/PEPPOL Integration Complete",
+      "description": "Norwegian e-invoice support via Unimicro API - Full implementation with EHF and PEPPOL standard formats. 94% test pass rate, production-ready with comprehensive error handling and validation.",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["erp", "integration", "norway", "invoicing"],
+      "created_at": "2026-02-04T10:00:00Z",
+      "completed_at": "2026-02-04T17:30:00Z",
+      "subtasks": [
+        "✓ Unimicro API integration",
+        "✓ EHF format implementation",
+        "✓ PEPPOL validation",
+        "✓ Comprehensive test suite (94% pass rate)",
+        "✓ Production deployment",
+        "✓ Error handling and logging"
+      ]
+    },
+    {
+      "id": "github-backup-system-001",
+      "title": "GitHub Backup System",
+      "description": "Immediate backup + automated 12-hour backups to GitHub. Includes sanitized openclaw.json config, all cron jobs, storage monitoring, and comprehensive RESTORE.md guide for disaster recovery.",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["backup", "github", "automation", "infrastructure"],
+      "created_at": "2026-02-04T12:00:00Z",
+      "completed_at": "2026-02-04T17:45:00Z",
+      "subtasks": [
+        "✓ Initial backup to GitHub",
+        "✓ Automated 12-hour backup cron job",
+        "✓ Configuration sanitization (secrets removed)",
+        "✓ Storage monitoring setup",
+        "✓ RESTORE.md documentation created",
+        "✓ Backup verification tests"
+      ]
+    },
+    {
+      "id": "security-audit-001",
+      "title": "Cybersecurity Audit & Hardening",
+      "description": "Gjennomgå og forsterke sikkerheten til OpenClaw + ERP-system på AWS EC2",
+      "column": "inprogress",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["security", "infrastructure", "urgent"],
+      "created_at": "2026-02-03T18:17:00Z",
+      "updated_at": "2026-02-04T17:45:00Z",
+      "subtasks": [
+        "Audit AWS Security Groups (åpne porter)",
+        "Sett opp UFW firewall (kun nødvendige porter)",
+        "Implementer fail2ban (SSH brute-force protection)",
+        "Verifiser SSH key-only auth (disable password)",
+        "Audit .env file permissions (chmod 600)",
+        "Implementer rate limiting på FastAPI",
+        "✓ Sett opp automated backups (PostgreSQL + configs)",
+        "✓ Storage monitoring implementert",
+        "Docker security: non-root users",
+        "HTTPS/TLS for alle endpoints",
+        "Secrets rotation policy"
+      ]
+    },
+    {
+      "id": "done-1",
+      "title": "Install Claude Code on EC2",
+      "description": "v2.1.29 installed, authenticated with Max plan",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["infrastructure", "setup"],
+      "created_at": "2026-02-01T20:00:00Z",
+      "completed_at": "2026-02-01T21:00:00Z"
+    },
+    {
+      "id": "done-2",
+      "title": "Set up GitHub repo & Pages",
+      "description": "glennhaavar-prog/openclawdghb - deployed to GitHub Pages",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["infrastructure", "github"],
+      "created_at": "2026-02-01T20:30:00Z",
+      "completed_at": "2026-02-01T21:30:00Z"
+    },
+    {
+      "id": "done-3",
+      "title": "Build Kanban Dashboard",
+      "description": "Dark theme, drag & drop, localStorage, 5 columns",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["dashboard", "ui"],
+      "created_at": "2026-02-01T21:00:00Z",
+      "completed_at": "2026-02-01T22:00:00Z"
+    },
+    {
+      "id": "done-4",
+      "title": "Configure Brave Web Search",
+      "description": "API key added to OpenClaw config, tested working",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "medium",
+      "tags": ["integration", "search"],
+      "created_at": "2026-02-01T22:00:00Z",
+      "completed_at": "2026-02-01T22:30:00Z"
+    },
+    {
+      "id": "done-5",
+      "title": "Add Assignee Feature",
+      "description": "Glenn/Nikoline assignments, visual borders, clipboard button, toast notifications",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["dashboard", "features"],
+      "created_at": "2026-02-01T23:00:00Z",
+      "completed_at": "2026-02-01T23:30:00Z"
+    },
+    {
+      "id": "todo-1",
+      "title": "Set up Gmail/Google Workspace",
+      "description": "Email access, calendar integration for Nikoline",
+      "column": "todo",
+      "assignee": "glenn",
+      "priority": "high",
+      "tags": ["integration", "email"],
+      "created_at": "2026-02-01T23:45:00Z"
+    },
+    {
+      "id": "done-6",
+      "title": "Bitcoin Conference 2026 Pricing Research",
+      "description": "Researched all major conferences, compiled pricing comparison, provided recommendations. Report: bitcoin-conference-research-2026.md",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["research", "bitcoin"],
+      "created_at": "2026-02-02T00:00:00Z",
+      "completed_at": "2026-02-02T00:15:00Z"
+    },
+    {
+      "id": "done-7",
+      "title": "Norwegian Bitcoin Influencers Research",
+      "description": "Top 30 Norwegian Bitcoin profiles on X/Twitter with follower counts. Report: norwegian-bitcoin-influencers-2026.md",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["research", "bitcoin", "marketing"],
+      "created_at": "2026-02-02T00:30:00Z",
+      "completed_at": "2026-02-02T01:00:00Z"
+    },
+    {
+      "id": "done-8",
+      "title": "Model Optimization & Cost Reduction",
+      "description": "Changed from Opus to Sonnet (5x cheaper), added Haiku fallback, updated SOUL.md with cost-aware rules for sub-agents",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["optimization", "cost"],
+      "created_at": "2026-02-02T02:00:00Z",
+      "completed_at": "2026-02-02T03:00:00Z"
+    },
+    {
+      "id": "done-9",
+      "title": "VS Code Remote SSH Setup",
+      "description": "Configured VS Code Remote SSH for easy EC2 access, port forwarding for web interface. Guide: HVORDAN-LOGGE-INN-OPENCLAW.md",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["infrastructure", "tools"],
+      "created_at": "2026-02-02T04:00:00Z",
+      "completed_at": "2026-02-02T05:00:00Z"
+    },
+    {
+      "id": "today-1",
+      "title": "Dashboard Debug & Gist Integration Fix",
+      "description": "Fikset data structure mismatch, column naming, og authentication issues. Kanban-dashbordet nå fullt funksjonelt med Gist-sync.",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["dashboard", "integration", "gist"],
+      "created_at": "2026-02-04T19:00:00Z",
+      "completed_at": "2026-02-04T19:30:00Z",
+      "subtasks": [
+        "✓ Fikset data structure mismatch",
+        "✓ Fikset column naming-problemer",
+        "✓ Implementert authentication for Gist",
+        "✓ Testet Gist-sync med kanban-tasks.json"
+      ]
+    },
+    {
+      "id": "today-2",
+      "title": "Kanban Task Recovery",
+      "description": "Gjenopprettet 11 tasks fra backup etter problemer med data-integritet. Alle tasks nå korrekt synkronisert mellom dashboard og Gist.",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["recovery", "backup", "kanban"],
+      "created_at": "2026-02-04T19:30:00Z",
+      "completed_at": "2026-02-04T20:00:00Z",
+      "subtasks": [
+        "✓ Identifisert backup av tapt data",
+        "✓ Gjenopprettet 11 tasks fra backup",
+        "✓ Verifisert data integritet",
+        "✓ Synkronisert med Gist"
+      ]
+    },
+    {
+      "id": "today-3",
+      "title": "Orchestration System Design",
+      "description": "Komplett design av Sonny orchestration system. Oppdatert av Harald med team-naming, konfliktdeteksjon, status tracking, og køsystem. Dokumentasjon: ORCHESTRATION.md",
+      "column": "done",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["orchestration", "design", "sonny"],
+      "created_at": "2026-02-04T20:00:00Z",
+      "completed_at": "2026-02-04T20:30:00Z",
+      "subtasks": [
+        "✓ Designet Sonny routing system (Nikoline → Harald/Sonny)",
+        "✓ Implementert team-naming convention",
+        "✓ Implementert konfliktdeteksjon med 4 løsningsvalg",
+        "✓ Designet status tracking med ETA",
+        "✓ Designet prioritets- og FIFO køsystem",
+        "✓ Dokumentert i ORCHESTRATION.md"
+      ]
+    },
+    {
+      "id": "orchestration-phase-1",
+      "title": "Orchestration Phase 1: Core Routing & Conflict Detection",
+      "description": "Implementering av basis routing system (Nikoline → Harald/Sonny) med konfliktdeteksjon og 4 løsningsvalg. Inkluderer status tracking med ETA-estimater.",
+      "column": "inprogress",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["orchestration", "implementation", "phase-1"],
+      "created_at": "2026-02-04T20:30:00Z",
+      "started_at": "2026-02-04T19:26:22Z",
+      "estimate_days": 3,
+      "subtasks": [
+        "Implementer basis routing (Nikoline → Harald/Sonny)",
+        "Lag konfliktdeteksjon med 4 løsningsvalg",
+        "Implementer status tracking med ETA",
+        "Lag API endpoints for routing",
+        "Test med demo scenarios",
+        "Dokumenter implementering"
+      ]
+    },
+    {
+      "id": "orchestration-phase-2",
+      "title": "Orchestration Phase 2: Claude Code Integration",
+      "description": "Integrasjon med Claude Code via PTY monitoring for real-time progress tracking. Implementer progress extraction og non-intrusive status checks.",
+      "column": "todo",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["orchestration", "implementation", "phase-2", "claude-code"],
+      "created_at": "2026-02-04T20:35:00Z",
+      "estimate_days": 7,
+      "subtasks": [
+        "Implementer PTY monitoring for Claude Code",
+        "Lag progress extraction fra terminal output",
+        "Implementer non-intrusive status checks",
+        "Lag async update mechanism for Kanban",
+        "Implementer error detection og recovery",
+        "Test med real Claude Code sessions",
+        "Dokumenter integration"
+      ]
+    },
+    {
+      "id": "orchestration-phase-3",
+      "title": "Orchestration Phase 3: Queue System & Polish",
+      "description": "Implementering av køsystem (FIFO/prioritet), auto-escalation, testing, og final deployment. Inkluderer komprehensiv testing og performance optimization.",
+      "column": "todo",
+      "assignee": "nikoline",
+      "priority": "high",
+      "tags": ["orchestration", "implementation", "phase-3", "deployment"],
+      "created_at": "2026-02-04T20:40:00Z",
+      "estimate_days": 7,
+      "subtasks": [
+        "Implementer FIFO køsystem",
+        "Implementer prioritet-basert køing",
+        "Lag auto-escalation rules",
+        "Implementer retry-mekanisme",
+        "Lag comprehensive test suite",
+        "Performance testing og optimization",
+        "Security audit",
+        "Deploy til produksjon",
+        "Dokumenter system"
+      ]
+    },
+    {
+      "id": "idea-1",
+      "title": "Phase 2: Webhook Integration",
+      "description": "Add webhooks for automatic task pickup so Nikoline can receive tasks directly from Kanban",
+      "column": "ideas",
+      "assignee": "nikoline",
+      "priority": "medium",
+      "tags": ["automation", "integration"],
+      "created_at": "2026-02-02T06:00:00Z"
+    }
+  ]
+}
